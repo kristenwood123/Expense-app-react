@@ -1,16 +1,15 @@
 import React from 'react'
 import '../styles/index.css'
 
-const ExpenseItem = () => {
+const ExpenseItem = ({ items }) => {
+
   return (
     <div className='expense-item'>
-      <div>March 28th, 2021</div>
-      <div className="expense-item__description">
-        <h2>Car Insurance</h2>
-        <div className="expense-item__price">$296.78</div>
-      </div>
+      {items.map((item, id) => {
+        return <h1>{item.title}</h1>
+      })}
     </div>
-  )
+     )
 }
 
 export default ExpenseItem
