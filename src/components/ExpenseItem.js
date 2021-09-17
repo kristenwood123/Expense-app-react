@@ -1,11 +1,17 @@
 import React from 'react'
+import '../styles/index.css'
 
 const ExpenseItem = () => {
   return (
-    <div>
-      ladskj
+    <div className='expense-item'>
+      <div>March 28th, 2021</div>
+      <div className="expense-item__description">
+        <h2>Car Insurance</h2>
+        <div className="expense-item__price">$296.78</div>
+      </div>
     </div>
   )
 }
 
 export default ExpenseItem
+
