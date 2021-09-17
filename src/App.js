@@ -27,9 +27,9 @@ function App() {
 
   const [items, setItems] = useState(expenses)
   return (
-    <>
+    <div className='expenses'>
     <ExpenseItem items={items} />
-    </>
+    </div>
   )
 }
 
